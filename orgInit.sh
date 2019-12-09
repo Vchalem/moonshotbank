@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sfdx force:org:create -s -f config/project-scratch-def.json -a ADK --setdefaultusername -d 10
+sfdx force:org:create -s -f config/project-scratch-def.json -a ADK --setdefaultusername -d 30
 sfdx force:apex:execute -f config/create-demo-data-setup.apex
 sfdx force:source:push
 sfdx force:user:permset:assign -n BankPerms
